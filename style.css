@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+body{
+    background: rgb(133, 255, 80);
+    background: linear-gradient(135deg, rgb(99, 252, 255) 0%, rgb(189, 255, 75) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    position: absolute;
+    top: 10vh;
+}
+
+.input-values{
+    height: 2em;
+    margin: 10px;
+    position: relative;
+    width: 20em;
+}
+.input{
+
+}
+.todo-input{
+    position: relative;
+    padding-left: 2%;
+    height: 100%;
+    width: 98%;
+    border: none;
+}
+.todo-buttom{
+    height: 100%;
+    position: absolute;
+    border: none;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-buttom:hover ion-icon,
+.todo-buttom:hover{
+    color: aliceblue;
+    background-color: rgb(255, 112, 60);
+}
+
+ion-icon{
+    pointer-events: none;
+    font-size: medium;
+}
+.lis-main{
+    width: 20em;
+}
+
+.list{
+    height: 2em;
+    width: 100%;
+    background-color: aliceblue;
+    outline: .5px solid;
+    margin: 5px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    transition: all .5s ease-in;
+}
+.text-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+
+}
+
+.trash-btn,
+.check-btn{
+    height: 100%;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}
+.trash-btn:hover{
+    color: white;
+    background-color: rgb(254, 52, 52);
+}
+.check-btn:hover{
+    color: white;
+    background-color: rgb(52, 254, 52);
+}
+
+.check_done{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tập làm người day5</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Abb element</h1>
+        </header>
+        <div class="input-values">
+            <input class="input todo-input" type="text">
+            <button class="input todo-buttom" value="submit type="submit">
+                <ion-icon name="add-circle"></ion-icon>
+            </button>
+        </div>
+        <div class="values_add">
+            <ul class="list-main">
+    
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js"></script>
+    <script type="module">
+        const firebaseConfig = {
+          apiKey: "AIzaSyB-DHZ4kCWVQqK9ouwDQOabAhGgYjh7l2I",
+          authDomain: "test-trainingjavascript.firebaseapp.com",
+          databaseURL: "https://test-trainingjavascript-default-rtdb.firebaseio.com",
+          projectId: "test-trainingjavascript",
+          storageBucket: "test-trainingjavascript.appspot.com",
+          messagingSenderId: "591145557063",
+          appId: "1:591145557063:web:80026671f10ecf16ea6562",
+          measurementId: "G-NRTJY76YW3"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    
+    <script src="./jp.js"></script>
+    
+</body>
+</html>
